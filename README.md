@@ -1,4 +1,4 @@
-tadp-2014c1-clase6-metaprogramacion-ruby
+tadp-2014c1-clase7-matabuilder-ruby
 ========================================
 
-instance_eval, class_eval, method_missing
+Metabuilder en Ruby
