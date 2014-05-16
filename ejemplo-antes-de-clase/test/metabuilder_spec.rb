@@ -112,10 +112,10 @@ describe 'Metabuilder' do
         20 - edad
       }
       behave_when 'expectativa_de_vida', proc {raza == 'salchicha'}, proc {
-        edad + peso * 2
+        50 - (edad + peso * 2)
       }
       behave_when 'expectativa_de_vida', proc {raza == 'chihuahua'}, proc {
-        5
+        15
       }
     }
 
