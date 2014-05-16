@@ -9,11 +9,11 @@ describe 'Metabuilder' do
 
   it 'puede crear un builder con varias properties' do
     builder_de_perros = Metabuilder.new
-      .set_target_class(Perro)
-      .add_property(:raza)
-      .add_property(:edad)
-      .add_property(:peso)
-      .build
+    .set_target_class(Perro)
+    .add_property(:raza)
+    .add_property(:edad)
+    .add_property(:peso)
+    .build
 
     builder_de_perros.raza = 'Fox terrier'
     builder_de_perros.edad = 4
