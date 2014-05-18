@@ -1,6 +1,6 @@
 require 'rspec'
-require_relative '../src/perro'
 require_relative '../src/metabuilder'
+require_relative '../src/perro'
 
 describe 'Metabuilder' do
 

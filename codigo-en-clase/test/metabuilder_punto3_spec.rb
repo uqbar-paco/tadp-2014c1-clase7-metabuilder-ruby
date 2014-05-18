@@ -5,18 +5,18 @@ require_relative '../src/metabuilder'
 describe 'Metabuilder' do
 
   it 'puede definir validaciones' do
-    builder_de_perros = Metabuilder.build {
-      property(:raza)
-      property(:edad)
-      property(:peso)
-      target_class(Perro)
-      validate {
+    builder_de_perros = Metabuilder.new
+      .add_property(:raza)
+      .add_property(:edad)
+      .add_property(:peso)
+      .set_target_class(Perro)
+      .validate {
         ['Fox terrier', 'salchicha', 'chihuahua'].include? raza
       }
-      validate {
+      .validate {
         edad > 0 && edad < 20
       }
-    }
+      .build
 
     builder_de_perros.raza = 'Fox terrier'
     builder_de_perros.edad = 4
